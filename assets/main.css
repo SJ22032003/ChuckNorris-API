@@ -1,0 +1,99 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(211, 210, 210);
+}
+.main{
+    margin: 10px;
+    min-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 20px solid white;
+    border-radius: 20px;
+    background: linear-gradient(135deg,rgb(139, 14, 223),rgb(80, 4, 141));
+}
+.jokesDiv{
+    /* border: 2px solid red; */
+    max-height:300px;
+    max-width: 600px;
+    margin: 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.jokes{
+    height:fit-content;
+    /* border:1px solid black; */
+    width:inherit;
+}
+.jokes p {
+    font-size: 35px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-align: center;
+    line-height: 40px; 
+    overflow: ellipsis;  
+}
+.nextBtnDiv{
+    /* border: 2px solid red; */
+    height:100px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.mainBtn{
+    border: none;
+    border-radius: 10px;
+    height:60px;
+    width: 240px;
+    margin: 10px;
+    font: bold 20px comic sans ms;
+    color: black;
+    box-shadow: 2px 2px 2px black;
+    cursor: pointer;
+}
+.mainBtn:hover{
+    filter: brightness(110%);
+}
+.mainBtn:active{
+    transform: translateY(2px);
+}
+
+/* Media Query */
+
+@media screen and (max-width:553px){
+    .main{
+        width: 90%;
+        border:10px solid white;
+    }
+    .jokes p{
+        font-size: 30px;
+    }
+    .mainBtn{
+        width: 160px;
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:320px){
+    .main{
+        width: 90%;
+        border:10px solid white;
+    }
+    .jokes p{
+        font-size: 20px;
+        line-height: 20px;
+        overflow: ellipsis;
+    }
+    .mainBtn{
+        width: 140px;
+        height: 40px;
+        font-size: 15px;
+    }
+}
