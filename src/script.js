@@ -5,6 +5,11 @@ let jokesArray = [];
 
 function putJokes(){
     jokes.innerHTML = jokesArray.value;
+    if(jokes.innerHTML.length == 0 || jokes.innerHTML.length > 270){
+        getJoke();
+    }
+    // console.log(jokes.innerHTML.length);
+
 }
 
 async function getJoke() {
